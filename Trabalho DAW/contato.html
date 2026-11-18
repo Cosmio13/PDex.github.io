@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <title>PDex</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+      <header id="cabecalho">
+    <h1 id="topo">Contato</h1>
+    <nav>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <h2>Cadastro e contato</h2>
+
+    <div id="area-video">
+    <video controls width="500">
+    <source src="PDex.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+<form id="formulario" action="#" method="post">
+
+  <h3>Seus dados</h3>
+
+  <label for="nome-contato">Nome completo</label>
+  <input type="text" id="nome-contato" name="nome" required>
+
+  <label for="email">E-mail</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senha" minlength="6" required>
+
+  <label for="nascimento">Data de nascimento</label>
+  <input type="date" id="nascimento" name="nascimento">
+
+  <h3>Sobre você</h3>
+
+  <label for="tipo-favorito">Tipo de Pokémon favorito</label>
+  <select id="tipo-favorito" name="tipo_favorito">
+    <option>Normal</option>
+    <option>Fogo</option>
+    <option>Água</option>
+    <option>Planta</option>
+    <option>Elétrico</option>
+    <option>Psíquico</option>
+    <option>Dragão</option>
+  </select>
+
+  <p>Você é treinador há quanto tempo?</p>
+  <input type="radio" id="novato" name="tempo" value="novato">
+  <label for="novato">Sou novato</label>
+  <input type="radio" id="veterano" name="tempo" value="veterano">
+  <label for="veterano">Sou veterano</label>
+
+  <p>Quais jogos você já jogou?</p>
+  <input type="checkbox" id="jogo-gba" name="jogos" value="gba">
+  <label for="jogo-gba">Game Boy / GBA</label>
+  <input type="checkbox" id="jogo-ds" name="jogos" value="ds">
+  <label for="jogo-ds">DS / 3DS</label>
+  <input type="checkbox" id="jogo-switch" name="jogos" value="switch">
+  <label for="jogo-switch">Switch</label>
+
+  <h3>Sua mensagem</h3>
+
+  <label for="assunto">Assunto</label>
+  <select id="assunto" name="assunto">
+    <option>Dúvida</option>
+    <option>Sugestão de Pokémon</option>
+    <option>Elogio</option>
+  </select>
+
+  <label for="mensagem">Mensagem</label>
+  <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+  <input type="submit" value="Cadastrar e enviar">
+</form>
+
+</body>
+
+</html>
